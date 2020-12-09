@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root{
+  --colorWhite: #FFFFFF
+}
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+  height: auto;
+}
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+}
+#landing{
+  background-color: var(--colorWhite);
+}
+#landing-text{
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+}
+#landing-text h2{
+  color: #888;
+}
+h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+.btn{
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+#landing-image{
+  background: url(./background-img.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  /* flex: 0 1 60vw; */
+  margin: 0;
+}
+#images{
+  display: block;
+}
+#images #header{
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+#images #header h2{
+  background-color: #333333;
+  color: var(--colorWhite);
+  border-left: 1px dotted var(--colorWhite);
+  border-right: 1px dotted var(--colorWhite);
+  padding: 0 1rem;
+  display: inline;
+}
+#images .caption{
+  padding: 0.8rem;
+  text-align: center;
+}
+#images img{
+  display: block;
+  width: 100%;
+  /* height: 100vh; */
+}
+h3{
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+footer{
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+footer h3{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+footer a{
+  background-color: white;
+  color: orangered;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  
+}
+footer a:hover{
+  background-color: orangered;
+  color: white;
+}
+@media screen and (min-width:915px){
+  body{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+  }
+}
